@@ -13,29 +13,31 @@ public class Physics : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{
+
+
 		//velocidad instantanea usando la masa
-		//GetComponent<Rigidbody>().AddForce(Vector3.right * 50f,ForceMode.Impulse);
+		GetComponent<Rigidbody>().AddForce(Vector3.right * 100f,ForceMode.Impulse);
 
 		//velocidad instantanea ignorando la masa
 		//GetComponent<Rigidbody>().AddForce(Vector3.right * 50f,ForceMode.VelocityChange);
 	}
 	
 	// Update is called once per frame
-	void Update () 
+	/*void FixedUpdate () 
 	{
-		//Fuerzas contuinuas
-		//Fuerza continua dependiendo de la masa
+		//****Fuerzas contuinuas
+		//****Fuerza continua dependiendo de la masa
 
 		//rb = GetComponent<Rigidbody>(); 
 		//rb.AddForce (new Vector3(1f, 0f, 1f) * 50f, ForceMode.Force);
-		//Fuerza continua independiente de la masa
+		//****Fuerza continua independiente de la masa
 
 		//GetComponent<Rigidbody>().AddForce(Vector3.right * 50f,ForceMode.Acceleration);
 
-		//Fuerza que cancela la gravedad
+		//****Fuerza que cancela la gravedad
 
 		rb = GetComponent<Rigidbody>(); 
 		rb.AddForce (Vector3.up * 50f, ForceMode.Force);
 		
-	}
+	}*/
 }
