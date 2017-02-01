@@ -14,9 +14,9 @@ public class Physics : MonoBehaviour {
 	void Start () 
 	{
 
-
+		float x = Random.Range (-1f, 1f);
 		//velocidad instantanea usando la masa
-		GetComponent<Rigidbody>().AddForce(Vector3.right * 100f,ForceMode.Impulse);
+		GetComponent<Rigidbody>().AddForce(new Vector3(x,0f,1f) * 100f,ForceMode.Impulse);
 
 		//velocidad instantanea ignorando la masa
 		//GetComponent<Rigidbody>().AddForce(Vector3.right * 50f,ForceMode.VelocityChange);
